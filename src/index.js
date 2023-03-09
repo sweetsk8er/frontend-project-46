@@ -2,24 +2,34 @@ import { readFileSync } from 'fs';
 import _ from 'lodash'
 
 const genDiff = (data1, data2) => {
-    const keys1 = _.keys(data1);
-    const keys2 = _.keys(data2);
-    const keys = _.union(keys1, keys2);
-
-    const result = {};
-    for (const key of keys) {
-        if (!_.has(data1, key)) {
-            result[key] = 'added';
-          } else if (!_.has(data2, key)) {
-            result[key] = 'deleted';
-          } else if (data1[key] !== data2[key]) {
-            result[key] = 'changed';
-          } else {
-            result[key] = 'unchanged';
-          }
+    const keys = Object.keys({ ...data1, ...data2 });
+    const sortKeys = _.sortBy(keys);
+    const diff = {};
+      for (const key of sortKeys) {
+        const val1 = data1[key];
+        const val2 = data2[key];
+        if ((val1 !== undefined) && !val2) {
+          diff[`- ${key}`] = val1;
+        } 
+        else if (!val1 && (val2 !== undefined)) {
+          diff[`+ ${key}`] = val2;
         }
-        return result
-}
+        else if (val1 && val2 && (val1 === val2)) {
+          diff[`  ${key}`] = val1;
+        } 
+        else if (val1 && val2 && (val1 !== val2)) {
+          diff[`- ${key}`] = val1;
+          diff[`+ ${key}`] = val2; 
+        }
+      }
+      const result = JSON.stringify(diff)
+        .replaceAll('"', '')
+        .replaceAll(',', `\n  `)
+        .replaceAll('{', `{\n  `)
+        .replaceAll('}', '\n}');
+    
+      return result;
+    };
 
 export default (filepath1, filepath2) => {
 const formatedData1 = readFileSync(filepath1, 'utf-8');
