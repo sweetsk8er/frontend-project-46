@@ -2,7 +2,7 @@
 import { Command } from 'commander';
 import genDiff from '../src/index.js';
 
-const program = new Command ();
+const program = new Command();
 
 program
   .name('gendiff')
