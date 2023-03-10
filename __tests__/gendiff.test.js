@@ -1,3 +1,5 @@
+/* eslint-disable no-underscore-dangle */
+
 import { fileURLToPath } from 'url';
 import { readFileSync } from 'fs';
 import path from 'path';
