@@ -1,6 +1,6 @@
 import { readFileSync } from 'fs';
 import _ from 'lodash';
-import path from 'path'
+import path from 'path';
 
 const genDiff = (data1, data2) => {
   const keys = Object.keys({ ...data1, ...data2 });
