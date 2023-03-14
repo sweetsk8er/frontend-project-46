@@ -13,3 +13,6 @@ ASCIINEMA gendiff YAML:
 
 ASCIINEMA stylish format:
 <a href="https://asciinema.org/a/6aNnVbgxXlak9LWV7Fg2LlPmp" target="_blank"><img src="https://asciinema.org/a/6aNnVbgxXlak9LWV7Fg2LlPmp.svg" /></a>
+
+ASCIINEMA PLAIN format:
+<a href="https://asciinema.org/a/aGZFJ0nAfdZ1alsM6RSWWpL2G" target="_blank"><img src="https://asciinema.org/a/aGZFJ0nAfdZ1alsM6RSWWpL2G.svg" /></a>
