@@ -5,5 +5,8 @@
 
 <a href="https://codeclimate.com/github/sweetsk8er/frontend-project-46/test_coverage"><img src="https://api.codeclimate.com/v1/badges/2d8d43504caafb7a8ad1/test_coverage" /></a>
 
-ASCIINEMA gendiff:
-https://asciinema.org/a/wvXmCVgfD7mJNZvByz2CXHM9q
+ASCIINEMA gendiff JSON:
+<a href="https://asciinema.org/a/wvXmCVgfD7mJNZvByz2CXHM9q" target="_blank"><img src="https://asciinema.org/a/wvXmCVgfD7mJNZvByz2CXHM9q.svg" /></a>
+
+SCIINEMA gendiff YAML:
+<a href="https://asciinema.org/a/zMBKpKHyZVuLQ522sUADqwFxp" target="_blank"><img src="https://asciinema.org/a/zMBKpKHyZVuLQ522sUADqwFxp.svg" /></a>
