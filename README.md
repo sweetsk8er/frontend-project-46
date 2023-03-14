@@ -8,5 +8,8 @@
 ASCIINEMA gendiff JSON:
 <a href="https://asciinema.org/a/wvXmCVgfD7mJNZvByz2CXHM9q" target="_blank"><img src="https://asciinema.org/a/wvXmCVgfD7mJNZvByz2CXHM9q.svg" /></a>
 
-SCIINEMA gendiff YAML:
+ASCIINEMA gendiff YAML:
 <a href="https://asciinema.org/a/zMBKpKHyZVuLQ522sUADqwFxp" target="_blank"><img src="https://asciinema.org/a/zMBKpKHyZVuLQ522sUADqwFxp.svg" /></a>
+
+ASCIINEMA stylish format:
+<a href="https://asciinema.org/a/6aNnVbgxXlak9LWV7Fg2LlPmp" target="_blank"><img src="https://asciinema.org/a/6aNnVbgxXlak9LWV7Fg2LlPmp.svg" /></a>
