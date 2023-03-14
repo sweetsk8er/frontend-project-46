@@ -16,3 +16,5 @@ ASCIINEMA stylish format:
 
 ASCIINEMA PLAIN format:
 <a href="https://asciinema.org/a/aGZFJ0nAfdZ1alsM6RSWWpL2G" target="_blank"><img src="https://asciinema.org/a/aGZFJ0nAfdZ1alsM6RSWWpL2G.svg" /></a>
+ASCIINEMA JSON format:
+<a href="https://asciinema.org/a/gYBRkknibnAiXdN8hXidC6C9g" target="_blank"><img src="https://asciinema.org/a/gYBRkknibnAiXdN8hXidC6C9g.svg" /></a>
