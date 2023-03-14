@@ -1,7 +1,8 @@
 import { readFileSync } from 'fs';
-import _ from 'lodash';
 import path from 'path';
 import parse from './parses.js';
+import buildTree from './buildTree.js';
+import formatStylish from './formatters/stylish.js';
 
 const fullPath = (filepath) => path.resolve(process.cwd(), filepath);
 const extractFormat = (filepath) => path.extname(filepath);
@@ -13,21 +14,9 @@ const getData = (filepath) => {
 const genDiff = (filepath1, filepath2) => {
   const data1 = getData(filepath1);
   const data2 = getData(filepath2);
-  const keys = Object.keys({ ...data1, ...data2 });
-  const sortKeys = _.sortBy(keys);
-  const result = sortKeys.map((key) => {
-    const val1 = data1[key];
-    const val2 = data2[key];
-    if ((val1 !== undefined) && !val2) {
-      return `  - ${key}: ${val1}`;
-    } if (!val1 && (val2 !== undefined)) {
-      return `  + ${key}: ${val2}`;
-    } if (val1 && val2 && (val1 === val2)) {
-      return `    ${key}: ${val1}`;
-    }
-    return (`  - ${key}: ${val1}\n  + ${key}: ${val2}`);
-  });
-  return `{\n${result.join('\n')}\n}`;
+
+  const tree = buildTree(data1, data2);
+  return formatStylish(tree);
 };
 
 export default genDiff;
