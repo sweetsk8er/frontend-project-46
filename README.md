@@ -5,6 +5,35 @@
 
 <a href="https://codeclimate.com/github/sweetsk8er/frontend-project-46/test_coverage"><img src="https://api.codeclimate.com/v1/badges/2d8d43504caafb7a8ad1/test_coverage" /></a>
 
+### Системные требования:
+
+Ubuntu Linux, PowerShell, Node.js v18.0.0+
+
+### Установка:
+  1. Клонировать проект
+  2. Установить зависимости: 
+   - npm ci
+   или
+   - make install
+
+Использование: 
+
+gendiff [options] <filepath1> <filepath2>
+
+Compares two configuration files and shows a difference.
+
+Options:
+  -V, --version        output the version number
+  -f, --format <type>  output format (default: "stylish")
+  -h, --help           display help for commandgendiff [options] <filepath1> <filepath2>
+
+Compares two configuration files and shows a difference.
+
+Options:
+  -V, --version        output the version number
+  -f, --format <type>  output format (default: "stylish")
+  -h, --help           display help for command
+
 ASCIINEMA gendiff JSON:
 <a href="https://asciinema.org/a/wvXmCVgfD7mJNZvByz2CXHM9q" target="_blank"><img src="https://asciinema.org/a/wvXmCVgfD7mJNZvByz2CXHM9q.svg" /></a>
 

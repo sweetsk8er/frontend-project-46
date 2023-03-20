@@ -5,7 +5,7 @@
   },
   "type": "module",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/sweetsk8er/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/sweetsk8er/frontend-project-46/actions)",
+  "description": "Проект 'Вычеслитель отличий'. Разница между двумя файлами",
   "main": "src/index.js",
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules npx jest"
